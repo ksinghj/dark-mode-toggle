@@ -6,7 +6,7 @@
 .button {
   border: 2px solid #10B7FF;
   border-radius: 53px;
-  background-image: url("/light.17d6325d.png");
+  background-image: url("./img/light.png");
   background-size: cover;
   background-position-x: 5px;
   -webkit-transition: 250ms ease;
@@ -35,7 +35,7 @@
 }
 
 .toggled__bg {
-  background-image: url("/dark.c4db7553.png") !important;
+  background-image: url("./img/dark.png") !important;
   border-color: #303030 !important;
 }
 
@@ -48,6 +48,4 @@
   width: 100px !important;
   height: 50px !important;
 }
-
-
-/*# sourceMappingURL=/styles.8986bff4.css.map */
+/*# sourceMappingURL=styles.css.map */
