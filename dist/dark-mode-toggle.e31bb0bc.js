@@ -118,12 +118,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
+var DMT = document.querySelector('.dark-mode-toggle');
 var button = document.querySelector('.button');
 var buttonHead = document.querySelector('.button-head'); // transform: translateX(100%);
 
 button.addEventListener('click', function () {
-  console.log('roggled');
+  console.log('toggled');
   buttonHead.classList.toggle('toggled');
+  button.classList.toggle('toggled__bg');
 });
 },{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -153,7 +155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53268" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60125" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
